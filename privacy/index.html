@@ -31,17 +31,17 @@
 <h2>三、权限说明</h2>
 <table>
 <tr><th>权限</th><th>用途</th></tr>
-<tr><td>网络访问（android.permission.INTERNET）</td><td>由游戏引擎和 PICO SDK 声明，供 PICO 平台完成正版验证、应用内购买等功能。游戏本身不通过网络收发其他数据。</td></tr>
+<tr><td>网络访问（android.permission.INTERNET）</td><td>由游戏引擎和 PICO SDK 声明，供 PICO 平台完成正版验证等功能。游戏本身不通过网络收发其他数据。</td></tr>
 <tr><td>修改系统设置（android.permission.WRITE_SETTINGS）</td><td>由 PICO SDK 声明。游戏本身不会修改你的系统设置。</td></tr>
 </table>
 
-<h2>四、应用内购买</h2>
-<p>本游戏免费下载，第一章可以免费玩；完整版通过 PICO 平台的应用内购买解锁。付款由 PICO 平台处理，我们<strong>收不到</strong>你的支付信息、账号或身份信息，只能从 PICO 得知"当前账号是否已购买完整版"。购买状态会保存在头显本地，用来在断网时也能玩完整版。</p>
+<h2>四、购买和正版验证</h2>
+<p>本游戏在 PICO 商店付费下载，买一次就能玩全部内容，游戏里没有任何购买。付款由 PICO 平台处理，我们<strong>收不到</strong>你的支付信息、账号或身份信息。游戏启动时会通过 PICO 平台确认当前账号已经购买本游戏（正版验证），验证结果只用来决定游戏能否运行，不会被保存，也不会发送给我们。</p>
 
 <h2>五、第三方 SDK 和服务</h2>
 <table>
 <tr><th>名称</th><th>提供方</th><th>用途</th><th>说明</th></tr>
-<tr><td>PICO XR SDK（含平台服务）</td><td>PICO（北京字节跳动科技有限公司或其关联公司）</td><td>头显显示、手柄输入、透视画面、应用内购买等平台功能</td><td>其数据处理遵循 PICO 的隐私政策</td></tr>
+<tr><td>PICO XR SDK（含平台服务）</td><td>PICO（北京字节跳动科技有限公司或其关联公司）</td><td>头显显示、手柄输入、透视画面、正版验证等平台功能</td><td>其数据处理遵循 PICO 的隐私政策</td></tr>
 <tr><td>Unity 引擎</td><td>Unity Technologies</td><td>游戏运行引擎</td><td>已关闭 Unity 的数据分析、崩溃上报和性能上报服务。Unity 引擎可能在启动时向 Unity 发送不含个人身份信息的设备硬件统计</td></tr>
 </table>
 
@@ -60,9 +60,9 @@
 <p class="meta">Effective date: October 28, 2026<br>Developer: Rulith<br>Contact: <a href="mailto:michaltina@hotmail.com">michaltina@hotmail.com</a></p>
 <p>Tiny Siege is a single-player mixed-reality tower defense game for PICO headsets. <strong>The game does not collect, upload or sell any personal information.</strong></p>
 <p><strong>Data stored on your headset only.</strong> The game saves your progress (unlocked levels, stars, endless records, chosen difficulty) and a local play log (time, level, difficulty, result, waves reached, towers built, cards picked) in the app's private storage on your headset. This data contains no personal information, is never sent to the developer or any third party, and is deleted when you uninstall the game. Passthrough video and controller positions are used in real time on the headset only and are never stored or uploaded.</p>
-<p><strong>Permissions.</strong> INTERNET is declared by the game engine and the PICO SDK for platform features such as license verification and in-app purchase; the game itself sends and receives no other data. WRITE_SETTINGS is declared by the PICO SDK; the game does not change your system settings.</p>
-<p><strong>In-app purchase.</strong> The game is free to download and the first chapter is free; the full version is unlocked through PICO's in-app purchase. PICO handles the payment; we never receive your payment details, account or identity, only whether the full version has been bought. That state is kept on the headset so the full version also works offline.</p>
-<p><strong>Third-party SDKs.</strong> PICO XR SDK (display, controllers, passthrough, in-app purchase and other platform features; governed by PICO's privacy policy). Unity engine (Unity Analytics, crash reporting and performance reporting are turned off; the engine may send anonymous device hardware statistics to Unity at startup).</p>
+<p><strong>Permissions.</strong> INTERNET is declared by the game engine and the PICO SDK for platform features such as license verification; the game itself sends and receives no other data. WRITE_SETTINGS is declared by the PICO SDK; the game does not change your system settings.</p>
+<p><strong>Purchase and license check.</strong> The game is a paid download from the PICO Store: one purchase unlocks everything, and there are no purchases inside the game. PICO handles the payment; we never receive your payment details, account or identity. At start the game asks PICO whether the current account owns it (license verification); the answer is only used to decide whether the game may run and is neither stored nor sent to us.</p>
+<p><strong>Third-party SDKs.</strong> PICO XR SDK (display, controllers, passthrough, license verification and other platform features; governed by PICO's privacy policy). Unity engine (Unity Analytics, crash reporting and performance reporting are turned off; the engine may send anonymous device hardware statistics to Unity at startup).</p>
 <p><strong>Children.</strong> The game collects no personal information from anyone, including children.</p>
 <p><strong>Changes and contact.</strong> Updates will be posted on this page with a new effective date. Questions: <a href="mailto:michaltina@hotmail.com">michaltina@hotmail.com</a></p>
 </body>
